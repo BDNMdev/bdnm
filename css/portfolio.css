@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background: #120f2d;
+    color: white;
+    font-family: cursive;
+    font-size: 20px;
+}
+header{
+    background: #171337;
+    border-bottom: 2px solid #171337;
+    box-shadow: 2px 2px 15px rgba(255,255,255,0.6);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-right: 50px;
+}
+header :left{
+    margin: 50px;
+}
+header .right ul{
+    list-style: none;
+    display: flex;
+}
+header .right ul li{
+    margin: 15px;
+}
+header .right ul li a{
+    text-decoration: none;
+    color: #f1f1f1;
+}
+header .right ul li a:hover{
+    text-decoration: underline;
+}
+section .head{
+    display: flex;
+    align-items: center;
+    background: #20c8bd82;
+    margin-top: 40px;
+    padding: 20px;
+    width: 100%;
+    height: 100px;
+}
+section .projet{
+    margin: auto;
+    margin-top: 50px;
+    width: 100%;
+}
+section .tout{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+section .projet a .card{
+    width: 80%;
+    height: 80%;
+    margin: 10px;
+}
+section .projet a{
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+section .projet a{
+    color: #f1f1f1;
+    text-decoration: none;
+}
+section .projet a .card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(255,255,255,0.6);
+}
+section .projet a .card .titre{
+    text-align: center;
+}
+footer{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    background: #534d7283;
+    height: 50px;
+}
+@media (max-width: 415px){
+    header{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+    section .head{
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+        width: 100%;
+    }
+}
+@media (max-width: 376px){
+    header{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+    section .head{
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+        width: 100%;
+    }
+    section .projet{
+        margin-top: 10px;
+    }
+    footer{
+        width: 100%;
+        font-size: 15px;
+    }
+}
+@media (max-width: 281px){
+    body{
+        font-size: 10px;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin-left: 45px;
+    }
+    section .head{
+        display: flex;
+        flex-direction: column;
+        height: 100px;
+        width: 100%;
+    }
+    
+}
