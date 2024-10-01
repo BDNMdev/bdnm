@@ -1,529 +1,61 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
 }
-body{
-    min-height: 100vh;
-    background: #120f2d;
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.hero {
+    background: url('../img/benoit.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
-    font-family: cursive;
-    font-size: 20px;
+    text-align: center;
 }
-header{
-    background: #171337;
-    border-bottom: 2px solid #171337;
-    box-shadow: 2px 2px 15px rgba(255,255,255,0.6);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100px;
-    margin-left: 50px;
-    margin-top: 20px;
-    margin-right: 50px;
-}
-header :left{
-    margin: 50px;
-}
-header .right ul{
-    list-style: none;
-    display: flex;
-}
-header .right ul li{
-    margin: 15px;
-}
-header .right ul li a{
-    text-decoration: none;
-    color: #f1f1f1;
-}
-header .right ul li a:hover{
-    text-decoration: underline;
-}
-section > div{
-    background: #1c1745;
-    border: 1px solid #8d88ad;
-    border-radius: 10px;
-    margin: auto;
-    margin-top: 50px;
-    height: 450px;
-    width: 80%;
-}
-section .presentaion{
-    display: flex;
-    align-items: center;
-}
-section .presentaion .photo{
-    width: 40%;
-    height: 100%;
-}
-section .presentaion .photo img{
-    width: 100%;
-    height: 100%;
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
-}
-section .presentaion .description{
-    display: flex;
-    justify-content: center;
-    margin: auto;
-}
-section .presentaion .description .tout{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-section .technologie{
-    display: flex;
-    align-items: center;
-}
-section .technologie .titre{
-    display: flex;
-    justify-content: center;
-    margin: auto;
-}
-section .technologie .image_techno{
-    background: #7f78ac;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 50%;
-    height: 100%;
-}
-section .technologie .image_techno .image{
-    border: 4px solid #6a5acd;
-    margin: 30px;
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-}
-section .technologie .image_techno .image img{
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-}
-footer{
-    display: flex;
-    margin-top: 30px;
-    justify-content: center;
-    align-items: center;
-    background: #534d7283;
-    height: 50px;
+/* Dégradé linéaire pour le fond de la section hero */
+.hero {
+    background: linear-gradient(to bottom, rgba(0, 123, 255, 1), rgba(0, 123, 255, 0.5), rgba(0, 123, 255, 0));
+    color: white;
+    padding: 100px 0;
 }
 
-@media (max-width: 1126px){
-    header{
-        display: flex;
-        width: 90%;
-        margin: 50px;
+/* Assurez-vous que le texte est bien visible sur le dégradé */
+.hero h1, .hero p {
+    color: white;
+    animation: rotateIn 1s ease-in-out forwards;
+    opacity: 0;
+    transform: rotate(-90deg);
+}
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+@keyframes rotateIn {
+    0% {
+        opacity: 0;
+        transform: rotate(-90deg) scale(0.5);
     }
-    section .technologie .image_techno .image{
-        border: 4px solid #6a5acd;
-        margin: 20px;
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-    }
-    section .presentaion .photo img{
-        border-top-right-radius: 10px;
-        border-bottom-left-radius: 0;
-    }
-    section > div{
-        height: 500px;
-    }
-    section .presentaion{
-        display: flex;
-    }
-    section .presentaion .photo{
-        width: 70%;
-        height: 100%;
-    }
-    section .presentaion .description .tout{
-        text-align: center;
-    }
-    footer{
-        width: 100%;
+    100% {
+        opacity: 1;
+        transform: rotate(0deg) scale(1);
     }
 }
-
-@media (max-width: 913px){
-    header{
-        display: flex;
-        width: 90%;
-    }
-    section .technologie .image_techno .image{
-        border: 4px solid #6a5acd;
-        margin: 20px;
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-    }
-    section .presentaion .photo img{
-        border-top-left-radius: 10px;
-        border-top-right-radius: 0px;
-        border-bottom-left-radius: 10px;
-    }
-    section > div{
-        height: 600px;
-    }
-    section .presentaion{
-        display: flex;
-    }
-    section .presentaion .photo{
-        width: 80%;
-        height: 100%;
-    }
-    section .presentaion .description .tout{
-        text-align: center;
-    }
-    section .technologie .titre .tout{
-        text-align: center;
-    }
-    footer{
-        width: 100%;
-    }
+.about {
+    padding: 4rem 0;
 }
-@media (max-width: 821px){
-    header{
-        display: flex;
-        width: 85%;
-    }
-    section .technologie .image_techno .image{
-        border: 4px solid #6a5acd;
-        margin: 20px;
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-    }
-    section .presentaion .photo img{
-        border-top-left-radius: 10px;
-        border-top-right-radius: 0px;
-        border-bottom-left-radius: 10px;
-    }
-    section > div{
-        height: 500px;
-    }
-    section .presentaion{
-        display: flex;
-    }
-    section .presentaion .photo{
-        width: 70%;
-        height: 100%;
-    }
-    section .presentaion .description .tout{
-        text-align: center;
-    }
-    section .technologie .titre .tout{
-        text-align: center;
-    }
-    footer{
-        width: 100%;
-    }
+.technologies i {
+    font-size: 4rem;
+    color: #007bff;
 }
-
-@media (max-width: 540px){
-    header{
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-        font-size: 15px;
-    }
-    section .presentaion{
-        display: flex;
-        flex-direction: column;
-    }
-    section .presentaion .photo{
-        width: 100%;
-        height: 70%;
-    }
-    section .presentaion .photo img{
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        border-bottom-left-radius: 0px;
-    }
-    section .technologie{
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-    }
-    section .description{
-        font-size: 15px;
-    }
-    section .technologie .titre{
-        display: flex;
-        align-items: center;
-        width: 100%;
-        height: 50%;
-        text-align: center;
-        font-size: 15px;
-    }
-    section .technologie .image_techno{
-        width: 100%;
-        height: 80%;
-    }
-    section .technologie .image_techno .image{
-        width: 70px;
-        height: 70px;
-        margin: 15px;
-    }
-    section .image_techno{
-        border-bottom-left-radius: 10px;
-        border-top-right-radius: 0px;
-    }
-    footer{
-        width: 100%;
-        font-size: 15px;
-    }
+.technologies .col-md-3 {
+    padding: 20px 0;
 }
-
-@media (max-width: 415px){
-    header{
-        display: flex;
-        flex-direction: column;
-        width: 70%;
-        font-size: 15px;
-    }
-    section .presentaion{
-        display: flex;
-        flex-direction: column;
-    }
-    section .presentaion .photo{
-        width: 100%;
-        height: 70%;
-    }
-    section .technologie{
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-    }
-    section .description{
-        font-size: 15px;
-    }
-    section .technologie .titre{
-        display: flex;
-        align-items: center;
-        width: 100%;
-        height: 50%;
-        text-align: center;
-        font-size: 15px;
-    }
-    section .technologie .image_techno{
-        width: 100%;
-        height: 80%;
-    }
-    section .technologie .image_techno .image{
-        width: 70px;
-        height: 70px;
-        margin: 15px;
-    }
-    section .image_techno{
-        border-bottom-left-radius: 10px;
-        border-top-right-radius: 0px;
-    }
-    footer{
-        width: 100%;
-        font-size: 15px;
-    }
-}
-
-@media (max-width: 376px){
-    header{
-        display: flex;
-        flex-direction: column;
-        width: 70%;
-        font-size: 15px;
-    }
-    section .presentaion{
-        display: flex;
-        flex-direction: column;
-    }
-    section .presentaion .photo{
-        width: 100%;
-        height: 70%;
-    }
-    section .technologie{
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-    }
-    section .description{
-        font-size: 15px;
-    }
-    section .technologie .titre{
-        display: flex;
-        align-items: center;
-        width: 100%;
-        height: 50%;
-        text-align: center;
-        font-size: 15px;
-    }
-    section .technologie .image_techno{
-        width: 100%;
-        height: 80%;
-    }
-    section .technologie .image_techno .image{
-        width: 70px;
-        height: 70px;
-        margin: 15px;
-    }
-    section .image_techno{
-        border-bottom-left-radius: 10px;
-        border-top-right-radius: 0px;
-    }
-    footer{
-        width: 100%;
-        font-size: 15px;
-    }
-}
-
-@media (max-width: 328px){
-    header{
-        display: flex;
-        flex-direction: column;
-        margin-left: 40px;
-        width: 75%;
-        font-size: 13px;
-    }
-    section .presentaion{
-        display: flex;
-        flex-direction: column;
-    }
-    section .presentaion .photo{
-        width: 100%;
-        height: 70%;
-    }
-    section .technologie{
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-    }
-    section .description{
-        font-size: 13px;
-    }
-    section .technologie .titre{
-        display: flex;
-        align-items: center;
-        width: 100%;
-        height: 50%;
-        text-align: center;
-        font-size: 13px;
-    }
-    section .technologie .image_techno{
-        width: 100%;
-        height: 80%;
-    }
-    section .technologie .image_techno .image{
-        width: 70px;
-        height: 70px;
-        margin: 15px;
-    }
-    section .image_techno{
-        border-bottom-left-radius: 10px;
-        border-top-right-radius: 0px;
-    }
-    footer{
-        width: 100%;
-        font-size: 13px;
-    }
-}
-@media (max-width: 281px){
-    header{
-        display: flex;
-        flex-direction: column;
-        margin-left: 40px;
-        width: 75%;
-        font-size: 13px;
-    }
-    section .presentaion{
-        display: flex;
-        flex-direction: column;
-    }
-    section .presentaion .photo{
-        width: 100%;
-        height: 70%;
-    }
-    section .technologie{
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-    }
-    section .description{
-        font-size: 13px;
-    }
-    section .technologie .titre{
-        display: flex;
-        align-items: center;
-        width: 100%;
-        height: 50%;
-        text-align: center;
-        font-size: 13px;
-    }
-    section .technologie .image_techno{
-        width: 100%;
-        height: 80%;
-    }
-    section .technologie .image_techno .image{
-        width: 70px;
-        height: 70px;
-        margin: 15px;
-    }
-    section .image_techno{
-        border-bottom-left-radius: 10px;
-        border-top-right-radius: 0px;
-    }
-    footer{
-        width: 100%;
-        font-size: 13px;
-    }
-}
-@media (max-width: 274px){
-    header{
-        display: flex;
-        flex-direction: column;
-        margin-left: 40px;
-        width: 75%;
-        font-size: 13px;
-    }
-    section .presentaion{
-        display: flex;
-        flex-direction: column;
-    }
-    section .presentaion .photo{
-        width: 100%;
-        height: 70%;
-    }
-    section .technologie{
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-    }
-    section .description{
-        font-size: 13px;
-    }
-    section .technologie .titre{
-        display: flex;
-        align-items: center;
-        width: 100%;
-        height: 50%;
-        text-align: center;
-        font-size: 13px;
-    }
-    section .technologie .image_techno{
-        width: 100%;
-        height: 80%;
-    }
-    section .technologie .image_techno .image{
-        width: 70px;
-        height: 70px;
-        margin: 15px;
-    }
-    section .image_techno{
-        border-bottom-left-radius: 10px;
-        border-top-right-radius: 0px;
-    }
-    footer{
-        width: 100%;
-        font-size: 13px;
-    }
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
 }
