@@ -1,141 +1,39 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Couleur de fond légère */
 }
-body{
-    min-height: 100vh;
-    background: #120f2d;
-    color: white;
-    font-family: cursive;
-    font-size: 20px;
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
-header{
-    background: #171337;
-    border-bottom: 2px solid #171337;
-    box-shadow: 2px 2px 15px rgba(255,255,255,0.6);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100px;
-    margin-left: 50px;
-    margin-top: 20px;
-    margin-right: 50px;
+header {
+    background-color: #343a40; /* Couleur de fond sombre */
 }
-header :left{
-    margin: 50px;
+.card {
+    border: none; /* Pas de bordure */
+    transition: transform 0.2s; /* Effet de survol */
 }
-header .right ul{
-    list-style: none;
-    display: flex;
-}
-header .right ul li{
-    margin: 15px;
-}
-header .right ul li a{
-    text-decoration: none;
-    color: #f1f1f1;
-}
-header .right ul li a:hover{
-    text-decoration: underline;
-}
-section .head{
-    display: flex;
-    align-items: center;
-    background: #20c8bd82;
-    margin-top: 40px;
-    padding: 20px;
-    width: 100%;
-    height: 100px;
-}
-section .projet{
-    margin: auto;
-    margin-top: 50px;
-    width: 100%;
-}
-section .tout{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-section .projet a .card{
-    width: 80%;
-    height: 80%;
-    margin: 10px;
-}
-section .projet a{
-    margin-bottom: 20px;
-    margin-left: 50px;
-}
-section .projet a{
-    color: #f1f1f1;
+a .card:hover{
     text-decoration: none;
 }
-section .projet a .card img{
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px rgba(255,255,255,0.6);
+.card:hover {
+    transform: scale(1.05); /* Zoom lors du survol */
 }
-section .projet a .card .titre{
-    text-align: center;
+.card-title {
+    font-size: 1.5rem; /* Augmente la taille de la police */
+    font-weight: bold; /* Texte plus gras pour le titre */
+    color: #004080; /* Couleur différente pour attirer l'attention */
+    text-transform: uppercase; /* Mettre en majuscules */
+    margin-bottom: 10px; /* Espacement entre le titre et le texte */
 }
-footer{
-    display: flex;
-    margin-top: 30px;
-    justify-content: center;
-    align-items: center;
-    background: #534d7283;
-    height: 50px;
+
+.card-text {
+    font-size: 1rem; /* Taille plus petite pour le texte de description */
+    font-weight: normal; /* Texte plus léger */
+    color: #666; /* Couleur plus douce pour le texte */
+    line-height: 1.6; /* Améliorer la lisibilité avec un espacement entre les lignes */
 }
-@media (max-width: 415px){
-    header{
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-    }
-    section .head{
-        display: flex;
-        flex-direction: column;
-        height: 200px;
-        width: 100%;
-    }
-}
-@media (max-width: 376px){
-    header{
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-    }
-    section .head{
-        display: flex;
-        flex-direction: column;
-        height: 200px;
-        width: 100%;
-    }
-    section .projet{
-        margin-top: 10px;
-    }
-    footer{
-        width: 100%;
-        font-size: 15px;
-    }
-}
-@media (max-width: 281px){
-    body{
-        font-size: 10px;
-    }
-    header{
-        display: flex;
-        flex-direction: column;
-        width: 70%;
-        margin-left: 45px;
-    }
-    section .head{
-        display: flex;
-        flex-direction: column;
-        height: 100px;
-        width: 100%;
-    }
-    
+
+footer {
+    background-color: #343a40; /* Couleur de fond sombre */
 }
