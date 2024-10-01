@@ -1,46 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="icon" type="image/png" href="../img/logo.png">
+    <link rel="stylesheet" href="../css/contact.css">
     <title>Contact</title>
+    <style>
+        
+    </style>
 </head>
 <body>
-    <header>
-        <div class="left">
-            <h1>BDNM</h1>
-        </div>
-        <div class="right">
-            <ul>
-                <li><a href="../index.html">Accueil</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+    <header class="py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="h4 text-white">BDNMdevconcept</h1>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
     </header>
-    <section>
+
+    <section class="container my-5">
         <div class="cards">
-            <div class="instruction">
+            <div class="instruction text-center mb-4">
                 <h1>Contactez-moi</h1>
-                <p>Au cas vous avez des préocupation ou dans le cas je vous serez utile</p>
+                <p>Si vous avez des préoccupations ou si je peux vous être utile, n'hésitez pas à me contacter.</p>
             </div>
-            <div class="contacter">
-                <div class="mail">
-                    <h2 class="titre">Email: </h2>
+            <div class="contacter text-center">
+                <div class="mail mb-4">
+                    <h2 class="titre">Email:</h2>
                     <p>bdnmdevconcept@gmail.com</p>
                 </div>
-                <div class="bouton">
-                    <a href="mailto:bdnmdevconcept@gmail.com">
-                        <button type="button"><img src="../img/email (4).png" alt="mail"> Ecrivez-nous</button>
+                <div class="button">
+                    <a href="mailto:bdnmdevconcept@gmail.com" class="btn btn-primary">
+                        <img src="../img/email (4).png" alt="mail"> Ecrivez-nous
                     </a>
                 </div>
             </div>
         </div>
     </section>
-    <footer>
+
+    <footer class="footer text-center py-3">
         <p>&copy; BDNMdevconcept</p>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
