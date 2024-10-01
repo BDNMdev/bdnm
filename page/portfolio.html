@@ -1,46 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/portfolio.css">
     <link rel="icon" type="image/png" href="../img/logo.png">
     <title>Portfolio</title>
 </head>
 <body>
-    <header>
-        <div class="left">
-            <h1>BDNM</h1>
-        </div>
-        <div class="right">
-            <ul>
-                <li><a href="../index.html">Accueil</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+    <header class="py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="h4 text-white">BDNMdevconcept</h1>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
     </header>
-    <section>
-        <div class="head">
-            <h3>Notice: </h3>
-            <p>Les projets ci-dessous sont de projet personnelle sur lequel j'ai eu à travailler, 
-                les organisations qui sont dans c'est projet sont fictif
-            </p>
+
+    <section class="container my-5">
+        <div class="alert alert-info">
+            <h3>Notice :</h3>
+            <p>Les projets ci-dessous sont des projets personnels sur lesquels j'ai travaillé. Les organisations de ces projets sont fictives.</p>
         </div>
-        <div class="projet">
-            <div class="tout">
+        <div class="row">
+            <div class="col-md-4 mb-4">
                 <a href="https://bdnmdev.github.io/bdnm/">
-                    <div class="card">
-                        <img src="../img/logo.png" alt="Photo du projet ou le logo du site">
-                        <div class="titre">
-                            <h1>BDNM</h1>
+                    <div class="card shadow-sm"> <!-- Ajout de l'ombre pour le style -->
+                        <img src="../img/logo.png" class="card-img-top" alt="Photo du projet ou le logo du site">
+                        <div class="card-body">
+                            <h5 class="card-title">BDNMdevconcept</h5>
+                            <p class="card-text">Ce site web est un portfolio de NIANDA MAYINDU DESIRE, développeur 
+                                web et desktop. Il présente ses compétences, ses projets réalisés, et offre un 
+                                moyen de le contacter. Le design moderne inclut des animations et met en valeur son 
+                                expertise en technologies comme HTML5, CSS3, JavaScript, PHP, et Python.</p> <!-- Description courte du projet -->
                         </div>
                     </div>
                 </a>
+            </div>
+            <!-- Ajoutez d'autres projets ici -->
         </div>
     </section>
-    <footer>
+
+    <footer class="text-white text-center py-3">
         <p>&copy; BDNMdevconcept</p>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
