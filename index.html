@@ -1,70 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Accueil</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/png" href="img/logo.png">
-    <title>Accueil</title>
 </head>
 <body>
-    <header>
-        <div class="left">
-            <h1>BDNM</h1>
-        </div>
-        <div class="right">
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="page/portfolio.html">Portfolio</a></li>
-                <li><a href="page/contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </header>
-    <section>
-        <div class="presentaion">
-            <div class="photo">
-                <img src="img/benoit.jpg" alt="La photo de BDNM">
-            </div>
-            <div class="description">
-                <div class="tout">
-                    <h1>NIANDA MAYINDU DESIRE</h1>
-                    <P>Developpeur web et des application desktop</P>
-                </div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">BDNMdevconcept</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page/portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page/contact.html">Contact</a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="technologie">
-            <div class="titre">
-                <div class="tout">
-                    <h1>Les technologies utilisées</h1>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero text-center py-5 bg-light">
+        <div class="container">
+            <h1>Je suis NIANDA MAYINDU DESIRE</h1>
+            <p class="lead">Développeur web et logiciel desktop</p>
+        </div>
+    </section>
+
+    <!-- About Section with Photo and Description -->
+    <section id="about" class="about py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Photo -->
+                <div class="col-md-6 text-center mb-4 mb-md-0">
+                    <img src="img/benoit.jpg" alt="Ma photo" class="img-fluid rounded-circle" style="width: 300px; height: 300px; object-fit: cover;">
                 </div>
-            </div>
-            <div class="image_techno">
-                <div class="image">
-                    <img src="img/html_img.png" alt="La photo de HTML">
-                </div>
-                <div class="image">
-                    <img src="img/css_img.png" alt="La photo de CSS">
-                </div>
-                <div class="image">
-                    <img src="img/sass2_img.png" alt="La photo de SASS">
-                </div>
-                <div class="image">
-                    <img src="img/js_img.png" alt="La photo de JS">
-                </div>
-                <div class="image">
-                    <img src="img/php_img.png" alt="La photo de PHP">
-                </div>
-                <div class="image">
-                    <img src="img/java1_img.png" alt="La photo de JAVA">
-                </div>
-                <div class="image">
-                    <img src="img/python_img.jpeg" alt="La photo de PYTHON">
+                <!-- Description -->
+                <div class="col-md-6">
+                    <h2>À propos de moi</h2>
+                    <p class="lead">Développeur passionné, je conçois des solutions web et desktop (Logiciel) sur mesure, répondant aux besoins spécifiques de mes clients. Mon expertise englobe une variété de technologies modernes, et je suis toujours à l'affût des dernières innovations pour offrir des produits à la fois créatifs et performants.</p>
                 </div>
             </div>
         </div>
     </section>
-    <footer>
-        <p>&copy; BDNMdevconcept</p>
+
+    <!-- Technologies Section -->
+    <section class="technologies text-center py-5 bg-light">
+        <div class="container">
+            <h2>Technologies que j'utilise</h2>
+            <div class="row mt-4">
+                <div class="col-6 col-md-3">
+                    <i class="fab fa-html5 fa-3x"></i>
+                    <p>HTML5</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <i class="fab fa-css3-alt fa-3x"></i>
+                    <p>CSS3</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <i class="fab fa-js fa-3x"></i>
+                    <p>JavaScript</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <i class="fab fa-php fa-3x"></i>
+                    <p>PHP</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <i class="fab fa-python fa-3x"></i>
+                    <p>Python</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-3">
+        <div class="container text-center">
+            <p>&copy; 2024 BDNMdevconcept - Tous droits réservés</p>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
